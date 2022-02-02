@@ -60,8 +60,14 @@
         let newSentence = sentence.replace(/[^\w\s]/gi, ''); // 3
         console.log(newSentence); // 3 // FALTA
         
-        const salary = 'He earns 5000 euro from salary per month, 10000 euro annual bonus, 15000 euro online courses per month.'; // 4 // FALTA
-        
+        const salary = 'He earns 5000 euro from salary per month, 10000 euro annual bonus, 15000 euro online courses per month.'; // 4 
+        let salaries = salary.match(/\d+/g);  // 4 
+        let totalAnnualIncome = 0;  // 4 
+        salaries.forEach(element => {  // 4 
+                totalAnnualIncome += Number(element);  // 4 
+            })  // 4 
+            console.log(totalAnnualIncome // 4 
+            ); // 4 
 
     </script>
 </body>
